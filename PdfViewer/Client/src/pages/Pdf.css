@@ -1,0 +1,97 @@
+/* Pdf.css */
+
+/* Container for the entire PDF viewer */
+.pdf-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Sidebar containing controls and information */
+.pdf-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 20%;
+  padding: 20px;
+  border-right: 2px solid #cbdef6;
+}
+
+/* File input for selecting a PDF file */
+.file-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.file-input:hover {
+  border: 2px dashed #0074d9;
+}
+
+/* Main PDF window */
+.pdf-window {
+  flex-grow: 1;
+  border: 2px solid #dae6f4;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+/* Toolbar containing buttons */
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Common style for buttons */
+.button {
+  margin: 5px 0;
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Page count information */
+.page-count {
+  margin-top: auto;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Logout button */
+.logout-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e71a47;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #d81141;
+}
